@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+    <title>Form Mahasiswa</title>
+</head>
+
+<body>
+    <h1><center>FORM PENDATAAN MAHASISWA</center></h1>
+    
+    <form name="fdatamhs" action="Latihan.php" method="post">
+        <table>
+			<tr>
+                <td> Fakultas </td>
+                <td>
+					<select>
+                        <option value="Kesehatan"> <b>Kesehatan</b> </option>
+						<option value="Komputer"> <b>Komputer</b> </option>
+						<option value="Ilmu Budaya"> <b>Ilmu Budaya</b> </option>
+						<option value="Ekonomi Bisnis"> <b>Ekonomi Bisnis</b> </option>
+						<option value="Teknik"> <b>Teknik</b> </option>
+					</select>
+                </td>
+                <td> Agama </td>
+				<td>
+					<select>
+                        <option value=" "> </option>
+						<option value="Islam"> Islam </option>
+						<option value="Kristen"> Kristen </option>
+						<option value="Katholik"> Katholik </option>
+						<option value="Hindu"> Hindu </option>
+						<option value="Budha"> Budha </option>
+					</select>
+                </td>
+                <td> Alamat Sekarang </td>
+				<td><input type="text" name="falamatskr" size="40"></td>
+            </tr>
+            <tr>
+                <td> Jurusan </td>
+                <td><input type="text" name="fjurusan" size="40"></td>
+                <td> Status Marital </td>
+				<td>
+					<select >
+						<option value=" ">   </option>
+						<option value="Lajang"> Lajang </option>
+						<option value="Menikah"> Menikah </option>
+						<option value="Bercerai"> Bercerai </option>
+						<option value="Tunangan"> Tunangan </option>
+					</select>
+                </td>
+                <td> RT/RW Sekarang </td>
+				<td>: RT<input name="frtskr" type="text" size="10">&nbsp;&nbsp;
+                RW<input name="frwskr" type="text" size="10">&nbsp;&nbsp;</td>
+            </tr>
+            <tr>
+                <td> Program Studi </td>
+                <td><input type="text" name="fprodi" size="40"></td>
+                <td> Nama Gadis Ibu Kandung </td>
+                <td><input type="text" name="fnamaibu" size="40"></td>
+                <td> Desa/Kelurahan Sekarang </td>
+				<td><input type="text" name="fdesaskr" size="40"></td>
+            </tr>
+            <tr>
+                <td> Kode Mahasiswa * </td>
+                <td><input type="text" name="fkode" size="40"></td>
+                <td> Nama Ayah Kandung </td>
+                <td><input type="text" name="fnamaayah" size="40"></td>
+                <td> Kecamatan Sekarang </td>
+				<td><input type="text" name="fkecskr" size="40"></td>
+            </tr>
+            <tr>
+                <td> Nama Mahasiswa * </td>
+                <td><input type="text" name="fnama" size="40"></td>
+                <td> Tempat Lahir </td>
+                <td><input type="text" name="ftempatlahir" size="40"></td>
+                <td> Kota Sekarang </td>
+				<td><input type="text" name="fkotaskr" size="40"></td>
+            </tr>
+            <tr>
+                <td> NIK Mahasiswa (No KTP) * </td>
+                <td><input type="text" name="fnik" size="40"></td>
+                <td> Tanggal Lahir </td>
+                <td><input type="date"></td>
+                <td> Kode Pos Sekarang </td>
+				<td><input type="text" name="fkodeposskr" size="40"></td>
+            </tr>
+            <tr>
+                <td> No BPJS </td>
+                <td><input type="text" name="fnobpjs" size="40"></td>
+                <td> Kewarganegaraan </td>
+				<td>
+					<select >
+						<option value=" ">   </option>
+						<option value="wni"> Warga Negara Indonesia </option>
+						<option value="wna"> Warga Negara Asing </option>
+					</select>
+                </td>
+                <td> Provinsi Sekarang </td>
+				<td><input type="text" name="fprovskr" size="40"></td>
+            </tr>
+            <tr>
+                <td> Password </td>
+                <td><input type="text" name="fpassword" size="40"></td>
+                <td> Alamat Asal </td>
+                <td><input type="text" name="falamat" size="40"></td>
+                <td> Transfer </td>
+				<td>
+					<select >
+						<option value="ya"> YA </option>
+						<option value="tidak"> TIDAK </option>
+					</select>
+				</td>
+            </tr>
+            <tr>
+                <td> Tahun Angkatan * </td>
+                <td><input type="text" name="fangkatan" size="40"></td>
+                <td> RT/RW Asal </td>
+				<td>: RT<input name="frt" type="text" size="10">&nbsp;&nbsp;
+                RW<input name="frw" type="text" size="10">&nbsp;&nbsp;</td>
+                <td> Jenis Pendaftaran </td>
+				<td>
+					<select >
+						<option value="-"> - </option>
+						<option value="pmdk"> PMDK </option>
+						<option value="regular"> REGULER </option>
+					</select>
+				</td>
+            </tr>
+            <tr>
+                <td> Semester Masuk * </td>
+                <td><input type="number" name="fsemester"></td>
+                <td> Desa/Kelurahan Asal </td>
+                <td><input type="text" name="fdesaasal" size="40"></td>
+                <td> Status </td>
+				<td>
+					<select >
+						<option value="pilih"> Pilih </option>
+						<option value="aktif"> Mahasiswa Aktif </option>
+                        <option value="cuti"> Cuti </option>
+                        <option value="mangkir"> Mangkir </option>
+					</select>
+				</td>
+            </tr>
+            <tr>
+                <td> Dosen Pembimbing Akademik </td>
+                <td><input type="text" name="fdosbing" size="40"></td>
+                <td> Kecamatan Asal </td>
+				<td><input type="text" name="fkec" size="40"></td>
+            </tr>
+            <tr>
+                <td> No Telp Orangtua/Wali </td>
+                <td><input type="text" name="fnotelp" size="40"></td>
+                <td> Kota Asal </td>
+				<td><input type="text" name="fkota" size="40"></td>
+            </tr>
+            <tr>
+                <td> No HP Mahasiwa </td>
+                <td><input type="text" name="fnohp" size="40"></td>
+                <td> Kode Pos Asal </td>
+				<td><input type="text" name="fkodepos" size="40"></td>
+            </tr>
+            <tr>
+                <td> Email Aktif Mahasiswa </td>
+                <td><input type="text" name="femail" size="40"></td>
+                <td> Provinsi Asal </td>
+                <td><input type="text" name="fprov" size="40"></td>
+            </tr>
+            <tr>
+                <td> Tempat Tinggal Saat Kuliah </td>
+				<td>
+					<select >
+						<option value="Pilih"> -- Pilih Jenis Tinggal -- </option>
+						<option value="Rumah"> Rumah Orang Tua </option>
+						<option value="Kos"> Kos </option>
+                        <option value="Saudara"> Bersama Saudara/Kerabat </option>
+                        <option value="ngontrak"> Kontrakan </option>
+					</select>
+                </td>
+                <td> Negara Asal </td>
+				<td><input type="text" name="fnegara" size="40"></td>
+            </tr>
+            <tr>
+                <td> Jenis Kelamin </td>
+				<td><input type="radio" name="fjeniskelamin" value="L">Laki-Laki
+				<input type="radio" name="fjeniskelamin" value="P">Perempuan</td>
+            </tr>
+
+            <tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td><input type="submit" name="fsubmit" value="Simpan"/>
+				<input type="submit" name="fsubmit" value="Batal"/></td>
+			</tr>
+
+        </table>
+    </form>
+</body>
+</html>
