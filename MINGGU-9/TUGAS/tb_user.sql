@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 08, 2020 at 09:04 AM
+-- Generation Time: May 08, 2020 at 04:28 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.28
 
@@ -40,8 +40,8 @@ CREATE TABLE `tb_user` (
 --
 
 INSERT INTO `tb_user` (`username`, `password`, `nama`, `hak`) VALUES
-('belajar', '123', 'Belajar Online', 'admin1'),
 ('ngoding', '112', 'Ayo Ngoding', 'operator1'),
+('pristid', '222', 'Pristi Dwi', 'admin'),
 ('semangat', '113', 'Semangka', 'operator2');
 
 --
